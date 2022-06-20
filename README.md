@@ -10,6 +10,10 @@ Buildpacks, A CNCF project (aka CNB) which doesn't require Dockerfile for buildi
 
 Caveats:
 1. OSS buildpacks are huge 
+```
+paketobuildpacks/builder:base    966MB
+paketobuildpacks/builder:tiny    585MB
+```
 2. Build time is high (2x) when compared with `docker build or kaniko-executor`
 
 ### So How ?
