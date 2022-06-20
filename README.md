@@ -28,7 +28,7 @@ test
 ```
 `/buildpack-java/env` folder contains the environment variables for specifying the Java version & Maven arguments
 
-Building the buildingpack with user-defined environment variables
+Building the buildpack with user-defined environment variables
 ```
 docker build -t <TAG> . && docker push <TAG>
 OR
@@ -44,6 +44,7 @@ $ mkdir -p .mvn/wrapper
 $ echo 'distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.6.3/apache-maven-3.6.3-bin.zip' > .mvn/wrapper/maven-wrapper.properties
 ```
 
+`.gitlab-ci.yml`
 ```
 build:
   interruptible: true
